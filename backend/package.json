@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "jose": "^5.9.6",
+    "jose": "^6.2.13",
     "next": "^16.4.3",
     "postgres": "^3.4.5",
     "react": "^19.3.1",
