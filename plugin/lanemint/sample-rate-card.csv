@@ -1,0 +1,5 @@
+service,country,state,lga,city,postcode_pattern,min_weight,max_weight,price,currency,priority,active
+Standard,NG,Lagos,Surulere,,LA01*,0,0.5,4500,NGN,10,yes
+Standard,NG,Lagos,Surulere,,,0.501,1.0,5200,NGN,10,yes
+Express,NG,Abuja,Jabi,,,0,0.5,7500,NGN,5,yes
+

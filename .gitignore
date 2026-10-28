@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.zip
+backend/.env*
+!backend/.env.example
+backend/.next/
+backend/node_modules/
+plugin/lanemint/vendor/
+
