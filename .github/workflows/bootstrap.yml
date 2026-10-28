@@ -836,7 +836,7 @@ jobs:
           LANEMINT_ARCHIVE
           base64 --decode /tmp/lanemint-source.b64 > /tmp/lanemint-source.zip
           unzip -o /tmp/lanemint-source.zip
-          rm .github/workflows/bootstrap.yml
+          rm -f .github/workflows/ci.yml .github/workflows/codeql.yml
       - name: Commit source tree
         run: |
           git config user.name "LaneMint Release Bot"
