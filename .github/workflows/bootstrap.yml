@@ -1,0 +1,26 @@
+name: Bootstrap source archive
+
+on:
+  push:
+    paths:
+      - lanemint-source.zip
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack source
+        run: |
+          unzip -o lanemint-source.zip
+          rm lanemint-source.zip
+      - name: Commit source tree
+        run: |
+          git config user.name "LaneMint Release Bot"
+          git config user.email "hi@akinola.co.uk"
+          git add -A
+          git commit -m "Initial LaneMint public preview"
+          git push
