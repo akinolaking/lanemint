@@ -26,7 +26,7 @@ jobs:
       - name: Build plugin ZIP
         run: cd plugin && zip -r ../lanemint-${{ github.sha }}.zip lanemint -x '*.DS_Store'
       - name: Upload plugin ZIP
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lanemint-plugin
           path: lanemint-${{ github.sha }}.zip
